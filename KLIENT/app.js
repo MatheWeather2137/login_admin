@@ -16,7 +16,6 @@ async function getUser(){
 
 function checkUser(){
     const user = JSON.parse(localStorage.getItem("upr"))
-
     const url = window.location.href
 
     if(user.upr != "admin" && url.includes("admin.html")){
